@@ -13,7 +13,7 @@ function App() {
       <Header />
       <main style={{ flex: 1 }}>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/axel/dist/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Login isRegister />} />
           <Route path="/profile" element={<Profile />} />
