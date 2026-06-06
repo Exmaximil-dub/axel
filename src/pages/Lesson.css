@@ -1,0 +1,394 @@
+.lesson-page {
+  padding: 2rem;
+  padding-bottom: 8rem;
+}
+
+.lesson-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.back-btn {
+  background: var(--gray-100);
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--gray-700);
+}
+
+.back-btn:hover {
+  background: var(--gray-200);
+}
+
+.lesson-info {
+  flex: 1;
+}
+
+.lesson-info h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 0.5rem;
+}
+
+.lesson-progress {
+  color: var(--gray-600);
+  font-weight: 500;
+}
+
+.lesson-content {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 1.5rem;
+}
+
+.theory-note {
+  background: var(--accent-yellow);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  color: var(--gray-800);
+}
+
+.vocab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.vocab-card {
+  background: var(--gray-100);
+  padding: 1.25rem;
+  border-radius: var(--radius-md);
+  transition: all 0.2s ease;
+}
+
+.vocab-card:hover {
+  background: var(--gray-200);
+}
+
+.vocab-balkar {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.vocab-russian {
+  color: var(--gray-700);
+  font-size: 1.05rem;
+}
+
+.vocab-meaning {
+  color: var(--gray-600);
+  font-style: italic;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.vocab-examples {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--gray-300);
+}
+
+.vocab-example {
+  color: var(--gray-600);
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.dialog-container {
+  background: var(--gray-100);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+.dialog-line {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+}
+
+.dialog-line.speaker-1 {
+  background: white;
+}
+
+.dialog-line.speaker-2 {
+  background: var(--accent-yellow);
+}
+
+.dialog-speaker {
+  font-weight: 700;
+  color: var(--primary-color);
+  min-width: 120px;
+}
+
+.dialog-text {
+  flex: 1;
+  color: var(--gray-800);
+}
+
+.reading-text {
+  background: var(--gray-100);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+}
+
+.reading-balkar {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.reading-russian {
+  color: var(--gray-700);
+  line-height: 1.8;
+  border-left: 3px solid var(--primary-color);
+  padding-left: 1rem;
+}
+
+.exercise-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.exercise-item {
+  background: var(--gray-100);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+}
+
+.exercise-question {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: 1rem;
+}
+
+.question-number {
+  color: var(--primary-color);
+  margin-right: 0.5rem;
+}
+
+.text-input-container {
+  margin-bottom: 1rem;
+}
+
+.exercise-input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 2px solid var(--gray-300);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.exercise-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(74, 144, 217, 0.1);
+}
+
+.multiple-choice {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.choice-btn {
+  padding: 1rem;
+  background: white;
+  border: 2px solid var(--gray-300);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.choice-btn:hover:not(:disabled) {
+  border-color: var(--primary-color);
+  background: rgba(74, 144, 217, 0.05);
+}
+
+.choice-btn.correct {
+  background: #d4edda;
+  border-color: var(--success-color);
+  color: var(--success-color);
+}
+
+.choice-btn.incorrect {
+  background: #f8d7da;
+  border-color: var(--error-color);
+  color: var(--error-color);
+}
+
+.feedback {
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.feedback.correct {
+  background: #d4edda;
+  color: var(--success-color);
+}
+
+.feedback.incorrect {
+  background: #f8d7da;
+  color: var(--error-color);
+}
+
+.correct-answer {
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.lesson-navigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.progress-dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.progress-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--gray-300);
+  transition: all 0.3s ease;
+}
+
+.progress-dot.active {
+  background: var(--primary-color);
+  transform: scale(1.2);
+}
+
+.progress-dot.completed {
+  background: var(--success-color);
+}
+
+.result-section {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.result-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin: 2rem 0 1rem;
+}
+
+.result-score {
+  margin: 2rem 0;
+}
+
+.score-value {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1;
+}
+
+.score-label {
+  font-size: 1.25rem;
+  color: var(--gray-600);
+  margin-top: 0.5rem;
+}
+
+.result-points {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--success-color);
+  margin-bottom: 2rem;
+}
+
+.result-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .lesson-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .lesson-info h1 {
+    font-size: 1.25rem;
+  }
+  
+  .lesson-content {
+    padding: 1.5rem;
+  }
+  
+  .vocab-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .lesson-navigation {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .progress-dots {
+    display: none;
+  }
+  
+  .result-title {
+    font-size: 1.75rem;
+  }
+  
+  .score-value {
+    font-size: 3rem;
+  }
+}
